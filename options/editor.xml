@@ -1,0 +1,77 @@
+<application>
+  <component name="CodeFoldingSettings">
+    <option name="COLLAPSE_IMPORTS" value="false" />
+  </component>
+  <component name="CodeInsightSettings">
+    <option name="completionCaseSensitive" value="2" />
+    <option name="COMPLETION_CASE_SENSITIVE" value="2" />
+    <option name="ADD_UNAMBIGIOUS_IMPORTS_ON_THE_FLY" value="true" />
+    <EXCLUDED_PACKAGE NAME="com.sun.javafx.collections.MappingChange.Map" />
+    <EXCLUDED_PACKAGE NAME="java.sql.Date" />
+    <EXCLUDED_PACKAGE NAME="sun.util.calendar.BaseCalendar.Date" />
+    <EXCLUDED_PACKAGE NAME="sun.util.calendar.LocalGregorianCalendar.Date" />
+  </component>
+  <component name="CodeVisionSettings">
+    <option name="codeVisionGroupToPosition">
+      <map>
+        <entry key="inheritors" value="Right" />
+        <entry key="problems" value="Default" />
+        <entry key="references" value="Right" />
+        <entry key="vcs.code.vision" value="Default" />
+      </map>
+    </option>
+    <option name="disabledCodeVisionProviderIds">
+      <set>
+        <option value="vcs.code.vision" />
+      </set>
+    </option>
+  </component>
+  <component name="DaemonCodeAnalyzerSettings">
+    <option name="AUTOREPARSE_DELAY" value="200" />
+  </component>
+  <component name="DeclarativeInlayHintsSettings">
+    <option name="providerIdToEnabled">
+      <map>
+        <entry key="java.implicit.types" value="false" />
+        <entry key="java.method.chains" value="true" />
+        <entry key="js.chain.hints" value="true" />
+        <entry key="js.type.hints" value="true" />
+        <entry key="ts.chain.hints" value="true" />
+        <entry key="ts.enum.hints" value="true" />
+        <entry key="ts.type.hints" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="EditorSettings">
+    <option name="languageBreadcrumbsMap">
+      <map>
+        <entry key="JAVA" value="true" />
+      </map>
+    </option>
+    <option name="USE_SOFT_WRAPS" value="" />
+    <option name="SOFT_WRAP_FILE_MASKS" value="*.md; *.txt; *.rst; *.adoc" />
+    <option name="IS_ENSURE_NEWLINE_AT_EOF" value="true" />
+    <option name="IS_CARET_BLINKING" value="false" />
+    <option name="SHOW_BREADCRUMBS" value="false" />
+    <option name="ENABLE_RENDERED_DOC" value="true" />
+    <option name="IS_DND_ENABLED" value="false" />
+    <option name="BIDI_TEXT_DIRECTION" value="RTL" />
+  </component>
+  <component name="InlayHintsSettings">
+    <option name="lastViewedProviderKeyId" value="Markdown.MarkdownTableInlayProviderSettingsKey" />
+    <settingsMapElement>
+      <JAVA.annotation.hints>
+        <Settings>
+          <option name="showInferred" value="true" />
+        </Settings>
+      </JAVA.annotation.hints>
+    </settingsMapElement>
+  </component>
+  <component name="SqlEditorTabsSettings" SHORTEN_TAB_NAMES="false">
+    <option name="shortenTabNames" value="false" />
+  </component>
+  <component name="TodoConfiguration">
+    <pattern pattern="\btodo\b.*" />
+    <pattern pattern="\bfixme\b.*" />
+  </component>
+</application>

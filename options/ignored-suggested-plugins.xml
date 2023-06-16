@@ -1,0 +1,14 @@
+<application>
+  <component name="IgnoredPluginSuggestions">
+    <option name="pluginIds">
+      <list>
+        <option value="com.haulmont.jpab" />
+        <option value="com.intellij.guice" />
+        <option value="com.intellij.javaee.ejb" />
+        <option value="com.intellij.drools" />
+        <option value="com.intellij.spring.websocket" />
+        <option value="com.intellij.bigdatatools" />
+      </list>
+    </option>
+  </component>
+</application>

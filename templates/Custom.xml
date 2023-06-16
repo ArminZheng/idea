@@ -1,0 +1,100 @@
+<templateSet group="Custom">
+  <template name="timesleep" value="try { TimeUnit.SECONDS.sleep($END$);} catch (InterruptedException e) { e.printStackTrace();}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="timecost" value="long start$VAR$ = System.currentTimeMillis();&#10;    $END$&#10;log.info(&quot;---$VAR$ time cost: &quot; + (System.currentTimeMillis() - start$VAR$) + &quot; ms---&quot;);" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="threadpool" value="ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(1, 20, 1L, TimeUnit.SECONDS, new LinkedBlockingDeque&lt;&gt;(50), Executors.defaultThreadFactory(), new ThreadPoolExecutor.AbortPolicy());&#10;try {&#10;    $END$&#10;} finally {&#10;    threadPoolExecutor.shutdown();&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="newthread" value="new Thread(()-&gt;{&#10;    $END$&#10;}, &quot;$VAR$&quot;).start();" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="t1" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="sop" value="System.out::println" description="" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="trylock" value="$VAR$.lock();&#10;try {&#10;    $END$&#10;} finally {&#10;    $VAR$.unlock();&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="column" value="/**&#10; * $VAR$&#10; */&#10;@ApiModelProperty(&quot;$VAR$&quot;)" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="@Target" value="@Target(ElementType.METHOD)&#10;@Retention(RetentionPolicy.RUNTIME)&#10;@Documented" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="**" value="**&#10; * $name$&#10; * $param$&#10; * @return $return$&#10; * @author Armin Zheng&#10; * @since $date$&#10; */" shortcut="ENTER" description="method comments" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="name" expression="methodName()" defaultValue="" alwaysStopAt="false" />
+    <variable name="date" expression="date(&quot;yyyy-MM-dd&quot;)" defaultValue="" alwaysStopAt="false" />
+    <variable name="param" expression="groovyScript(&quot;if(\&quot;${_1}\&quot;.length() == 2) {return '';} else {def result=''; def params=\&quot;${_1}\&quot;.replaceAll('[\\\\[|\\\\]|\\\\s]', '').split(',').toList(); for(i = 0; i &lt; params.size(); i++) {result+='\\n * @param ' + params[i] + ' '}; return result}&quot;, methodParameters())" defaultValue="" alwaysStopAt="false" />
+    <variable name="return" expression="groovyScript(&quot;def result=''; def params=\&quot;${_1}\&quot;.replaceAll('[\\\\[|\\\\]|\\\\s]', '').split('&lt;').toList(); for(i = 0; i &lt; params.size(); i++) {if(i!=0){result+='&lt;';};  def p1=params[i].split(',').toList();  for(i2 = 0; i2 &lt; p1.size(); i2++) { def p2=p1[i2].split('\\\\.').toList();  result+=p2[p2.size()-1]; if(i2!=p1.size()-1){result+=','}  } ;  };  return result&quot;, methodReturnType())" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="1/0" value="int bug = 1 / 0;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="def" value="public $RETURN$ $NAME$($VAR$) {&#10;&#10;    $END$&#10;}" description="" toReformat="false" toShortenFQNames="false">
+    <variable name="RETURN" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;capability&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="psvf" value="public static $RETURN$ $NAME$($VAR$) {&#10;    $END$&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;func0&quot;" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RETURN" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logdebug" value="if (log.isDebugEnabled()) {&#10;    log.debug(&quot;$END$&quot;);&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="loginfo" value="log.info(&quot;$END$&quot;);" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="defs" value="public static $RETURN$ $NAME$($VAR$) {&#10;&#10;    $END$&#10;}" description="" toReformat="false" toShortenFQNames="false">
+    <variable name="RETURN" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;capability&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logger" value="private static final Logger log = LoggerFactory.getLogger($var$.class);" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="className()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+</templateSet>

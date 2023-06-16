@@ -1,0 +1,7 @@
+com.haojiyou.CharAutoReplace
+some.awesome
+IdeaVIM
+IdeaVimExtension
+GrepConsole
+com.baomidou.plugin.idea.mybatisx
+Pythonid

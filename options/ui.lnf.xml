@@ -1,0 +1,12 @@
+<application>
+  <component name="UISettings">
+    <option name="ACTIVATE_MRU_EDITOR_ON_CLOSE" value="true" />
+    <option name="KEEP_TABS_ALPHABETICALLY_SORTED" value="true" />
+    <option name="EDITOR_TAB_LIMIT" value="12" />
+    <option name="HIDE_KNOWN_EXTENSION_IN_TABS" value="true" />
+    <option name="OPEN_IN_PREVIEW_TAB_IF_POSSIBLE" value="true" />
+    <option name="SCROLL_TAB_LAYOUT_IN_EDITOR" value="false" />
+    <option name="SHOW_BREAKPOINTS_OVER_LINE_NUMBERS" value="false" />
+    <option name="SORT_TABS_ALPHABETICALLY" value="true" />
+  </component>
+</application>

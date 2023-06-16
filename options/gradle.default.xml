@@ -1,0 +1,7 @@
+<application>
+  <component name="GradleDefaultProjectSettings">
+    <option name="distributionType" value="LOCAL" />
+    <!-- <option name="gradleHome" value="C:\Gradle\gradle-7.6.1" /> -->
+    <!-- <option name="gradleHome" value="/opt/homebrew/Cellar/gradle/8.1.1/libexec" /> -->
+  </component>
+</application>

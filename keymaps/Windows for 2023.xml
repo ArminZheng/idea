@@ -1,0 +1,16 @@
+<keymap version="1" name="Windows for 2023" parent="$default">
+  <action id="ActivateBuildToolWindow">
+    <keyboard-shortcut first-keystroke="alt 3" />
+  </action>
+  <action id="ActivateCommitToolWindow" />
+  <action id="ActivateFindToolWindow" />
+  <action id="ActivateGradleToolWindow">
+    <keyboard-shortcut first-keystroke="alt 6" />
+  </action>
+  <action id="ActivateNotificationsToolWindow">
+    <keyboard-shortcut first-keystroke="alt 0" />
+  </action>
+  <action id="ActivateProblemsViewToolWindow" />
+  <action id="SplitChooser.Duplicate" />
+  <action id="Terminal.SwitchFocusToEditor" />
+</keymap>

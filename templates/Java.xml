@@ -1,0 +1,28 @@
+<templateSet group="Java">
+  <template name="fori" value="for (int $INDEX$ = 0; $INDEX$ &lt; $LIMIT$; $INDEX$++) {&#10;    $END$&#10;}" description="Create iteration loop" toReformat="false" toShortenFQNames="true">
+    <variable name="INDEX" expression="suggestIndexName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="LIMIT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="St" value="String" description="String" toReformat="false" toShortenFQNames="false">
+    <context />
+  </template>
+  <template name="else-if" value="else if ($CONDITION$) {&#10;    $END$&#10;} " description="Add else-if branch" toReformat="false" toShortenFQNames="false">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="inn" value="if ($VAR$ != null) {&#10;    $END$&#10;}" description="Inserts 'if not null' statement" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestFirstVariableName(&quot;Object&quot;)" defaultValue="var" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ifn" value="if ($VAR$ == null) {&#10;    $END$&#10;}" description="Inserts 'if null' statement" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestFirstVariableName(&quot;Object&quot;)" defaultValue="var" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="psvm" value="public static void main(String[] args) {&#10;    $END$&#10;}" description="main() method declaration" toReformat="false" toShortenFQNames="true">
+    <context />
+  </template>
+  <template name="main" value="public static void main(String[] args) {&#10;    $END$&#10;}" description="main() method declaration" toReformat="false" toShortenFQNames="true">
+    <context />
+  </template>
+</templateSet>
